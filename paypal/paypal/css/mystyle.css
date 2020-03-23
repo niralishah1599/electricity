@@ -1,0 +1,85 @@
+h1,h2,h3,h4,h5,h6
+{
+	font-style:none;
+	text-transform:none;
+}
+.logo
+{
+	margin:0;
+	font-size:30px;
+}
+.toggleclass
+{}
+.sliderimage
+{}
+.inputpadding
+{
+	margin:0;
+}
+.news
+{
+	border: 1px solid rgba(0,0,0,.05);
+    padding:2% 2%;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;    
+}
+.whatnew
+{
+	border: 1px solid rgba(0,0,0,.05);
+    padding:2% 2%;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;    
+	text-decoration:none;
+	margin:-18% 8%;
+}
+.whatnew ul li
+{
+	list-style:none;
+}
+.whatnew ul li a
+{
+	color:gray;
+	font-size:15px;
+}
+.panel
+{
+	padding:0;
+}
+.panel-heading
+{
+	padding:3%;
+	background:orange;
+}
+.label
+{
+	font-size:2px;
+}
+
+@media screen and (min-device-width:320px) and (max-device-width:480px)
+{
+	.logo
+	{	
+		margin:7% 0 0 0;
+	}
+	.toggleclass
+	{
+		margin:8% 5%;
+	}
+	.sliderimage
+	{
+		margin:-5% 0;
+	}
+	.news
+	{
+		margin:5% 0;
+	}
+	.whatnew
+	{
+		margin:5% 0 0% 0;
+	}
+	.inputpadding{
+		margin:6% 0 0 0;
+	}
+}

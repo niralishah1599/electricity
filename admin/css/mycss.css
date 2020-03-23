@@ -1,0 +1,32 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-family:open sans;
+    background: #e8e6e6;
+}
+#wcadmin
+{
+    padding:7% 0 2% 5%;
+    font-size:70px; 
+    z-index: -1000;
+}
+#homedesc
+{
+    padding:4% 0 10% 8%;
+    font-size:16px; 
+    width:85%;
+}
+#wcadmin1
+{
+    padding:1% 0 0% 8%;
+    font-size:20px; 
+}
+#info
+{
+    font-size:22px;
+}
+#table
+{
+    margin:5% 0;
+}
