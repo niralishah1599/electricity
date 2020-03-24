@@ -4,8 +4,8 @@ $billid=$_SESSION["bill_no"];
 echo $billid;
 include("connection.php");
 require_once("library.php"); // include the library file
-define('EMAIL_ADD', 'rknakum07@gmail'); // define any notification email
-define('PAYPAL_EMAIL_ADD', 'rknakum07@gmail'); // facilitator email which will receive payments change this email to a live paypal account id when the site goes live
+define('EMAIL_ADD', 'shahnirali5@gmail'); // define any notification email
+define('PAYPAL_EMAIL_ADD', 'shahnirali5@gmail'); // facilitator email which will receive payments change this email to a live paypal account id when the site goes live
 require_once("paypal_class.php");
 $p 				= new paypal_class(); // paypal class
 $p->admin_mail 	= EMAIL_ADD; // set notification email
@@ -18,13 +18,13 @@ switch($action){
 		$this_script = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
         $homepageurl='http://localhost/eletricity/homepage.php';
 		$pdfurl='http://localhost/eletricity/pdf.php';
-		$p->add_field('business', 'rknakum07@gmail.com'); // Call the facilitator eaccount
+		$p->add_field('business', 'shahnirali5@gmail.com'); // Call the facilitator eaccount
 		$p->add_field('cmd', $_POST["cmd"]); // cmd should be _cart for cart checkout
 		$p->add_field('upload', '1');
 		$p->add_field('return', $pdfurl.'?action=success&billid='.$billid.''); // return URL after the transaction got over
 		$p->add_field('cancel_return', $homepageurl.'?action=cancel'); // cancel URL if the trasaction was cancelled during half of the transaction
 		$p->add_field('notify_url', $homepageurl.'?action=ipn'); // Notify URL which received IPN (Instant Payment Notification)
-		$p->add_field('currency_code', $_POST["currency_code"]);
+		$p->add_field('currency_code', 'USD');
 		$p->add_field('invoice', $_POST["invoice"]);
 		$p->add_field('item_name_1', $_POST["Bill_id"]);
 		$p->add_field('item_number_1', $_POST["bill_no"]);

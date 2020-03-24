@@ -6,14 +6,14 @@ if(isset($_GET['billid']))
 {
 	$id = $_GET['billid'];
 		$select="SELECT * FROM billrecord where bill_id='$id'";
-			$result=mysql_query($select) or die (mysql_error());
-			if(mysql_num_rows($result)==0)
+			$result=mysqli_query($con, $select) or die (mysql_error());
+			if(mysqli_num_rows($result)==0)
 			{
 				echo "<center><div class'alert alert-danger'>No records found</div></center>";
 			}
 			else
 			{
-					$row=mysql_fetch_object($result);
+					$row=mysqli_fetch_object($result);
 						$bno = $row->bill_no;
 						$cid = $row->customer_id;
 						$bamount = $row->bill_amount;
