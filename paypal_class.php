@@ -17,7 +17,7 @@
 define('LOG_FILE', '.ipn_results.log');
 
 define('SSL_P_URL', 'https://www.paypal.com/cgi-bin/webscr');
-define('SSL_SAND_URL','https://www.sandbox.paypal.com/invoice/create');
+define('SSL_SAND_URL','https://www.sandbox.paypal.com/cgi-bin/webscr');
 
 class paypal_class {
 	
@@ -35,8 +35,8 @@ class paypal_class {
 	function __construct() {
 
 		$this->ipn_status = '';
-		$this->admin_mail = 'youremail@gmail.com';
-		$this->paypal_mail = 'youremail@gmail.com';
+		$this->admin_mail = 'shahnirali51@gmail.com';
+		$this->paypal_mail = 'shahnirali51@gmail.com';
 		$this->txn_id = null;
 		$this->tax = null;
 		$this->ipn_log = true;

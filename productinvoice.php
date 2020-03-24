@@ -120,10 +120,10 @@ include("connection.php");
 							
 							<div class="form-group">
 								<div class="col-md-3 col-md-offset-1">
-									<label class="text-center">Contact No.</label>
+									<label class="text-center">Country</label>
 								</div>
 								<div class="col-md-7">
-									<input type="text" name="payer_country" placeholder="Enter Contact No." value="" class="form-control"><br>
+									<input type="text" name="payer_country" placeholder="Enter Country." value="" class="form-control"><br>
 								</div>
 							</div>
 							
